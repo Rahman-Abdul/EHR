@@ -1,15 +1,16 @@
 .login-main{
+  position: fixed;
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 100%;
   background-color: #fff;
-  height: auto;
+  height: 100%;
 }
 
 .login-form {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 60%;
 }
 .card {
   text-align: left;
@@ -17,33 +18,54 @@
   height: auto;
 }
 .login-image{
-  height: 800px;
+  height: 100%;
   color: #fff;
-  background-image: url("../../assets/images/loginPic.png");
   background-size: 100%;
   background-size:cover;
-  width: 50%;
+  width: 70%;
 }
-
 .head{
-  color: #102352;
+font-family: 'Silka';
+font-style: normal;
+width: 411px;
+height: 120px;
+color: #102352;
 font-size: 50px;
 font-weight: 600;
 line-height: 60px;
+display: flex;
+align-items: center;
 }
 
 .form-control{
 margin-top: 20px;
-width: 340.8px;
-height: 40px;
+width: 540.8px;
+height: 80px;
+background: #FFFFFF;
+border: 0.6px solid #D1D1D1;
+border-radius: 10px;
 
 }
 
+.form-control::placeholder{
+  width: 50px;
+height: 27px;
+  font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 149.3%;
+/* identical to box height, or 27px */
+
+letter-spacing: 0.01em;
+
+color: #707070;
+}
+
 .btn-customBlue{
-   background: #2C61E4;
-   border-radius: 5px;
-   border-color: #2C61E4;
-  width: 340px;
-  height: 40px;
+  width: 541px;
+  height: 80px;
+  background: #2C61E4;
+border-radius: 10px;
 
 }

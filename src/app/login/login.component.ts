@@ -1,4 +1,4 @@
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
 
@@ -12,8 +12,11 @@ export class LoginComponent implements OnInit {
 
   public loginForm!: FormGroup;
   public submitted = false;
+  ImagePath: string;
 
-  constructor(private formBuilder: FormBuilder, private router: Router) {}
+  constructor(private formBuilder: FormBuilder, private router: Router) {
+    this.ImagePath = '/assets/images/loginPic.png'
+  }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
