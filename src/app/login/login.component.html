@@ -1,6 +1,11 @@
+<div class="login-main">
+<div class="login-image">
+
+</div>
 <div class="login-form">
   <div class="card">
-    <h2 class="head py-2">Login</h2>
+    <h2 class="head py-2">Sign in your EHR
+      account</h2>
     <form class="user-login" [formGroup]="loginForm" (ngSubmit)="onLogin()">
       <div class="row">
         <div class="col-md-12 roundedTextBox mb-3">
@@ -28,10 +33,10 @@
         </div>
       </div>
       <br>
-      <div class="buttons text-center">
-        <button class="btn-customBlue mr-2" type="submit">Login</button>
+      <div class="buttons text-center login-button">
+        <button class="btn-customBlue mr-2" type="submit">Sign in</button>
       </div>
     </form>
   </div>
 </div>
-
+</div>

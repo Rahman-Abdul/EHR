@@ -1,9 +1,30 @@
+.login-main{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: aqua;
+  height: auto;
+}
+
 .login-form {
-  /* text-align: center; */
-  margin-top: 4%;
-  padding: 60px;
+  display: flex;
+  text-align: center;
 }
 .card {
+  /* text-align: center; */
+align-items: center;
   padding: 20px;
-  border: 1px solid #125266;
+  height: auto;
+}
+.login-image{
+  height: 800px;
+  color: #fff;background-image: url("../../assets/images/loginPic.png");
+  background-size: 100%;
+  background-size: cover;
+  width: 50%;
+}
+
+.login-button{
+
+
 }
