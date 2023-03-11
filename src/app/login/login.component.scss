@@ -2,29 +2,48 @@
   display: flex;
   justify-content: center;
   width: auto;
-  background-color: aqua;
+  background-color: #fff;
   height: auto;
 }
 
 .login-form {
   display: flex;
-  text-align: center;
+  justify-content: center;
+  width: 50%;
 }
 .card {
-  /* text-align: center; */
-align-items: center;
+  text-align: left;
   padding: 20px;
   height: auto;
 }
 .login-image{
   height: 800px;
-  color: #fff;background-image: url("../../assets/images/loginPic.png");
+  color: #fff;
+  background-image: url("../../assets/images/loginPic.png");
   background-size: 100%;
-  background-size: cover;
+  background-size:cover;
   width: 50%;
 }
 
-.login-button{
+.head{
+  color: #102352;
+font-size: 50px;
+font-weight: 600;
+line-height: 60px;
+}
 
+.form-control{
+margin-top: 20px;
+width: 340.8px;
+height: 40px;
+
+}
+
+.btn-customBlue{
+   background: #2C61E4;
+   border-radius: 5px;
+   border-color: #2C61E4;
+  width: 340px;
+  height: 40px;
 
 }

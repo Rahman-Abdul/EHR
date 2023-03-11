@@ -4,8 +4,7 @@
 </div>
 <div class="login-form">
   <div class="card">
-    <h2 class="head py-2">Sign in your EHR
-      account</h2>
+    <h2 class="head py-2">Sign in your EHR account</h2>
     <form class="user-login" [formGroup]="loginForm" (ngSubmit)="onLogin()">
       <div class="row">
         <div class="col-md-12 roundedTextBox mb-3">
@@ -18,6 +17,7 @@
         </div>
         <div class="col-md-12 roundedTextBox mb-3">
           <input type="password" class="form-control mb-2" id="inputPassword" formControlName="password" placeholder="Password">
+          <p>Forgot password?</p>
           <div *ngIf="submitted && formControl['password'].errors" class="text-danger">
             <div *ngIf="formControl['password'].errors?.['required']">Password is required.</div>
             <div *ngIf="formControl['password'].errors['pattern']">
