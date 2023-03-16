@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   public loginForm!: FormGroup;
   public submitted = false;
   ImagePath: string;
+  hide = true;
 
   constructor(private formBuilder: FormBuilder, private router: Router) {
     this.ImagePath = '/assets/images/loginPic.png'

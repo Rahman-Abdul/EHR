@@ -11,22 +11,22 @@
           <input type="email" class="form-control mb-2" id="inputEmail" formControlName="email" placeholder="Email">
           <!-- <small id="emailHelp" class="form-text text-muted ml-2">We'll never share your email with anyone else.</small> -->
           <div *ngIf="submitted && formControl['email'].errors" class="text-danger">
-            <div *ngIf="formControl['email'].errors?.['email']">Email must be valid.</div>
-            <div *ngIf="formControl['email'].errors?.['required']">Email is required.</div>
+            <div  class="password-warning" *ngIf="formControl['email'].errors?.['email']">Email must be valid.</div>
+            <div  class="password-warning" *ngIf="formControl['email'].errors?.['required']">Email is required.</div>
           </div>
         </div>
         <div class="col-md-12 roundedTextBox mb-3">
           <input type="password" class="form-control mb-2" id="inputPassword" formControlName="password" placeholder="Password">
           <p>Forgot password?</p>
           <div *ngIf="submitted && formControl['password'].errors" class="text-danger">
-            <div *ngIf="formControl['password'].errors?.['required']">Password is required.</div>
+            <div  class="password-warning" *ngIf="formControl['password'].errors?.['required']">Password is required.</div>
             <div *ngIf="formControl['password'].errors['pattern']">
               <!-- <h3>Password must contain the following:</h3> -->
               <ul>
-                <li>Password should be alphanumeric</li>
-                <li>A letter of the password should be capital</li>
-                <li>Password must contain a special character (@, $, !, &, etc)</li>
-                <li>Password length must be greater than 7 characters</li>
+                <li class="password-warning">Password should be alphanumeric</li>
+                <li class="password-warning">A letter of the password should be capital</li>
+                <li class="password-warning">Password must contain a special character (@, $, !, &, etc)</li>
+                <li class="password-warning">Password length must be greater than 7 characters</li>
               </ul>
             </div>
           </div>
